@@ -1,0 +1,29 @@
+
+scan_timeout = 100
+command_timeout = 1000
+
+[aws]
+disabled = true
+
+[battery]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[directory]
+truncation_length = 13
+truncate_to_repo = false
+
+[hostname]
+disabled = true
+
+[python]
+python_binary = ["python", "python3"]
+
+[username]
+disabled = true
+
+[git_metrics]
+disabled = false
+format = "([+$added]($added_style)) ([-$deleted]($deleted_style)) "
