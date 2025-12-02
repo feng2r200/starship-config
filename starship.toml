@@ -31,6 +31,22 @@ python_binary = ["python", "python3"]
 [username]
 disabled = true
 
+[git_branch]
+disabled = true
+
+[git_commit]
+disabled = true
+
+[git_state]
+disabled = false
+
 [git_metrics]
 disabled = false
-format = "([+$added]($added_style)) ([-$deleted]($deleted_style)) "
+added_style = 'bold green'
+deleted_style = 'bold red'
+only_nonzero_diffs = true
+format = '([+$added]($added_style) )([-$deleted]($deleted_style) )'
+ignore_submodules = false
+
+[git_status]
+disabled = false
